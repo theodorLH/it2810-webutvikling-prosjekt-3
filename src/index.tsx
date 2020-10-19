@@ -7,7 +7,6 @@ import * as serviceWorker from './serviceWorker';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import movieReducer from './store/movieReducer';
 import moviesReducer from './reducers/reducer-movies';
 
 const store = createStore(moviesReducer)
