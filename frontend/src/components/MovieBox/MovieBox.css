@@ -19,7 +19,7 @@
     grid-row-end: 3;
     margin: 10px auto 10px 10px;
     width: 90%;
-    height: 90%;
+    height: auto;
 }
 
 #movieBox_grid h3 {
@@ -27,7 +27,6 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    padding-left: 7%;
 }
 
 /*#movieBox_grid > p {

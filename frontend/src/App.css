@@ -7,7 +7,7 @@ p {
   font-size: 15px;
   font-style: normal;
   font-weight: 200;
-  /*line-height: 200%;*/
+  line-height: 90%;
 }
 
 h2 {
@@ -20,6 +20,8 @@ h3 {
   font-weight: normal;
   line-height: 150%;
   color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 0;
+  padding-left: 7%;
 }
 
 #grid_container {
