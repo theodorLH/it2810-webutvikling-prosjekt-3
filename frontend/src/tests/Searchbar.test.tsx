@@ -1,12 +1,13 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react' // ES6
 import SearchBar from '../components/SearchBar/SearchBar';
+import App from "../App";
 import createContext from '../mobx/store';
 
 
 
-it('renders SearchBar correctly ', () => {
-        const tree = renderer.create(<SearchBar />).toJSON();
-        expect(tree).toMatchSnapshot();
+it("renders SearchBar correctly", () => {
+        const { container } = render(<SearchBar/>);
+        expect(container).toMatchSnapshot();
 });
 
