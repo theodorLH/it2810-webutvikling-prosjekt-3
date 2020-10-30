@@ -4,7 +4,10 @@ import { json } from 'body-parser';
 import { movieRouter } from './routes/movie'
 import bodyParser from "body-parser";
 
+
+let cors = require('cors')
 const app = express()
+app.use(cors());
 app.use(json())
 app.use(movieRouter)
 app.use(bodyParser.json())

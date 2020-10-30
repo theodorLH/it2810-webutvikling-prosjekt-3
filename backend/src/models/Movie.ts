@@ -1,6 +1,5 @@
 import mongoose from 'mongoose';
 
-
 interface IMovie {
     title: string;
     year: number;
@@ -30,8 +29,7 @@ interface movieDoc extends mongoose.Document {
 const movieSchema = new mongoose.Schema(
     {
         title: {
-            type: String,
-            required: [true, 'Title field is required']
+            type: String
         },
         year: {
             type: Number
